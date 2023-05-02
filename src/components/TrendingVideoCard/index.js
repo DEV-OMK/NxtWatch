@@ -38,7 +38,7 @@ const HomeVideoCard = props => (
         <VideoCardContainer>
           <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
             <VideoCard>
-              <Thumbnail src={thumbnailUrl} alt="thumbnail" />
+              <Thumbnail src={thumbnailUrl} alt="video thumbnail" />
               <VideoDetailsContainer>
                 <ProfileContainer>
                   <Profile src={profileImageUrl} alt="channel logo" />

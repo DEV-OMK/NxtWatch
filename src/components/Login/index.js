@@ -1,4 +1,5 @@
 import {Component} from 'react'
+import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 import NxtWatchContext from '../../context/NxtWatchContext'
 import {
@@ -34,7 +35,7 @@ class Login extends Component {
   onSubmitForm = async event => {
     const {username, password} = this.state
     event.preventDefault()
-    if (username !== '' && password !== '') {
+    {
       const loginUrl = 'https://apis.ccbp.in/login'
       const userDetails = {username, password}
       const options = {
@@ -122,6 +123,11 @@ class Login extends Component {
 
   render() {
     const {showErrorMsg, errorMsg} = this.state
+    const jwtToken = Cookies.get('jwt_token')
+
+    if (jwtToken !== undefined) {
+      return <Redirect to="/" />
+    }
 
     return (
       <NxtWatchContext.Consumer>

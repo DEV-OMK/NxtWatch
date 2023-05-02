@@ -19,7 +19,7 @@ const HomeVideoCard = props => (
       return (
         <VideoCard>
           <Link to={`/videos/${id}`} style={{textDecoration: 'none'}}>
-            <Thumbnail src={thumbnailUrl} alt="thumbnail" />
+            <Thumbnail src={thumbnailUrl} alt="video thumbnail" />
             <VideoDetails>
               <VideoTitle isDarkTheme={isDarkTheme}>{title}</VideoTitle>
               <VideoText isDarkTheme={isDarkTheme}>

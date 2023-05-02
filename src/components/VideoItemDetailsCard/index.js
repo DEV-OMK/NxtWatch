@@ -83,12 +83,10 @@ class VideoItemDetailsCard extends Component {
           eachVideo => eachVideo.id === videoDetails.id,
         )
         const onClickSaveButton = () => {
-          this.setState(
-            prevState => ({
-              isSaved: !prevState.isSaved,
-            }),
-            toggleSavedListItem(videoDetails),
-          )
+          toggleSavedListItem(videoDetails)
+          this.setState(prevState => ({
+            isSaved: !prevState.isSaved,
+          }))
         }
 
         return (
@@ -146,7 +144,7 @@ class VideoItemDetailsCard extends Component {
             <ChannelDetailsSm>
               <DetailsSm>
                 <ProfileContainer>
-                  <Profile src={profileImageUrl} alt="profile" />
+                  <Profile src={profileImageUrl} alt="channel logo" />
                 </ProfileContainer>
                 <div>
                   <ChannelName isDarkTheme={isDarkTheme}>{name}</ChannelName>

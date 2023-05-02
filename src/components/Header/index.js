@@ -52,53 +52,65 @@ const Header = props => (
             </Link>
           </LogoButton>
           <ButtonsContainerSm>
-            <ThemeButton
-              type="button"
-              onClick={onClickTheme}
-              isDarkTheme={isDarkTheme}
-              data-testid="theme"
-            >
-              {isDarkTheme && <HiSun />}
-              {!isDarkTheme && <HiMoon />}
-            </ThemeButton>
-            <MenuPopup
-              triggerField={
-                <ProfileButtonSm type="button" isDarkTheme={isDarkTheme}>
-                  <GoThreeBars />
-                </ProfileButtonSm>
-              }
-            />
-            <LogoutPopup
-              triggerField={
-                <LogoutButtonSm type="button" isDarkTheme={isDarkTheme}>
-                  <FiLogOut />
-                </LogoutButtonSm>
-              }
-              logout={onClickLogout}
-            />
+            <li key="nav-1">
+              <ThemeButton
+                type="button"
+                onClick={onClickTheme}
+                isDarkTheme={isDarkTheme}
+                data-testid="theme"
+              >
+                {isDarkTheme && <HiSun />}
+                {!isDarkTheme && <HiMoon />}
+              </ThemeButton>
+            </li>
+            <li key="nav-2">
+              <MenuPopup
+                triggerField={
+                  <ProfileButtonSm type="button" isDarkTheme={isDarkTheme}>
+                    <GoThreeBars />
+                  </ProfileButtonSm>
+                }
+              />
+            </li>
+            <li key="nav-3">
+              <LogoutPopup
+                triggerField={
+                  <LogoutButtonSm type="button" isDarkTheme={isDarkTheme}>
+                    <FiLogOut />
+                  </LogoutButtonSm>
+                }
+                logout={onClickLogout}
+              />
+            </li>
           </ButtonsContainerSm>
           <ButtonsContainerLg>
-            <ThemeButton
-              type="button"
-              isDarkTheme={isDarkTheme}
-              onClick={onClickTheme}
-              data-testid="theme"
-            >
-              {isDarkTheme && <HiSun />}
-              {!isDarkTheme && <HiMoon />}
-            </ThemeButton>
-            <ProfileButtonLg type="button">
-              <ProfileImage
-                src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
-                alt="profile"
+            <li key="nav-4">
+              <ThemeButton
+                type="button"
+                isDarkTheme={isDarkTheme}
+                onClick={onClickTheme}
+                data-testid="theme"
+              >
+                {isDarkTheme && <HiSun />}
+                {!isDarkTheme && <HiMoon />}
+              </ThemeButton>
+            </li>
+            <li key="nav-5">
+              <ProfileButtonLg type="button">
+                <ProfileImage
+                  src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"
+                  alt="profile"
+                />
+              </ProfileButtonLg>
+            </li>
+            <li key="nav-6">
+              <LogoutPopup
+                triggerField={
+                  <LogoutButtonLg type="button">Logout</LogoutButtonLg>
+                }
+                logout={onClickLogout}
               />
-            </ProfileButtonLg>
-            <LogoutPopup
-              triggerField={
-                <LogoutButtonLg type="button">Logout</LogoutButtonLg>
-              }
-              logout={onClickLogout}
-            />
+            </li>
           </ButtonsContainerLg>
         </Navbar>
       )

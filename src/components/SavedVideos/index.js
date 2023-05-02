@@ -73,7 +73,7 @@ const SavedVideos = () => (
             <Sidebar />
             <SavedVideosContainer
               isDarkTheme={isDarkTheme}
-              data-testid="saved videos"
+              data-testid="savedVideos"
             >
               {savedVideosList.length > 0 && renderSavedVideosBanner()}
               <SavedVideosResponsiveContainer>

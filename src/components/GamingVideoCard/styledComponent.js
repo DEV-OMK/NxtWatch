@@ -30,7 +30,7 @@ export const VideoDetails = styled.div`
   margin-top: 15px;
 `
 
-export const VideoTitle = styled.h3`
+export const VideoTitle = styled.p`
   font-family: 'Roboto';
   font-size: 14px;
   font-weight: 700;
