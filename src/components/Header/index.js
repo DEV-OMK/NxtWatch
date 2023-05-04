@@ -1,5 +1,7 @@
 import {withRouter, Link} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import {v4 as uuidv4} from 'uuid'
+
 import {HiMoon, HiSun} from 'react-icons/hi'
 import {FiLogOut} from 'react-icons/fi'
 import {GoThreeBars} from 'react-icons/go'
@@ -52,7 +54,7 @@ const Header = props => (
             </Link>
           </LogoButton>
           <ButtonsContainerSm>
-            <li key="nav-1">
+            <li key={uuidv4()}>
               <ThemeButton
                 type="button"
                 onClick={onClickTheme}
@@ -63,7 +65,7 @@ const Header = props => (
                 {!isDarkTheme && <HiMoon />}
               </ThemeButton>
             </li>
-            <li key="nav-2">
+            <li key={uuidv4()}>
               <MenuPopup
                 triggerField={
                   <ProfileButtonSm type="button" isDarkTheme={isDarkTheme}>
@@ -72,7 +74,7 @@ const Header = props => (
                 }
               />
             </li>
-            <li key="nav-3">
+            <li key={uuidv4()}>
               <LogoutPopup
                 triggerField={
                   <LogoutButtonSm type="button" isDarkTheme={isDarkTheme}>
@@ -84,7 +86,7 @@ const Header = props => (
             </li>
           </ButtonsContainerSm>
           <ButtonsContainerLg>
-            <li key="nav-4">
+            <li key={uuidv4()}>
               <ThemeButton
                 type="button"
                 isDarkTheme={isDarkTheme}
@@ -95,7 +97,7 @@ const Header = props => (
                 {!isDarkTheme && <HiMoon />}
               </ThemeButton>
             </li>
-            <li key="nav-5">
+            <li key={uuidv4()}>
               <ProfileButtonLg type="button">
                 <ProfileImage
                   src="https://assets.ccbp.in/frontend/react-js/nxt-watch-profile-img.png"

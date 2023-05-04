@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Switch, Route} from 'react-router-dom'
+import {Switch, Route, Redirect} from 'react-router-dom'
 
 import NxtWatchContext from './context/NxtWatchContext'
 
@@ -67,7 +67,8 @@ class App extends Component {
             path="/videos/:id"
             component={VideoItemDetails}
           />
-          <NotFound />
+          <Route path="/not-found" component={NotFound} />
+          <Redirect to="/not-found" />
         </Switch>
       </NxtWatchContext.Provider>
     )
