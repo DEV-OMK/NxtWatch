@@ -15,12 +15,14 @@ export const SidebarContainer = styled.div`
   }
 `
 
-export const LinksContainer = styled.div`
+export const LinksContainer = styled.ul`
   display: flex;
   flex-direction: column;
+  padding: 0px;
+  list-style-type: none;
 `
 
-export const LinkItem = styled.button`
+export const LinkItem = styled.li`
   width: 100%;
   font-family: 'Roboto';
   font-size: 16px;

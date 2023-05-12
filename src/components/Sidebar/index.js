@@ -57,7 +57,6 @@ class Sidebar extends Component {
               <LinksContainer>
                 <Link to="/" style={{textDecoration: 'none'}}>
                   <LinkItem
-                    type="button"
                     id="home"
                     isDarkTheme={isDarkTheme}
                     isActiveId={activeId === 'home'}
@@ -74,7 +73,6 @@ class Sidebar extends Component {
                 </Link>
                 <Link to="/trending" style={{textDecoration: 'none'}}>
                   <LinkItem
-                    type="button"
                     id="trending"
                     isActiveId={activeId === 'trending'}
                     isDarkTheme={isDarkTheme}
@@ -91,7 +89,6 @@ class Sidebar extends Component {
                 </Link>
                 <Link to="/gaming" style={{textDecoration: 'none'}}>
                   <LinkItem
-                    type="button"
                     id="gaming"
                     isActiveId={activeId === 'gaming'}
                     isDarkTheme={isDarkTheme}
@@ -108,7 +105,6 @@ class Sidebar extends Component {
                 </Link>
                 <Link to="/saved-videos" style={{textDecoration: 'none'}}>
                   <LinkItem
-                    type="button"
                     id="savedVideos"
                     isActiveId={activeId === 'savedVideos'}
                     isDarkTheme={isDarkTheme}

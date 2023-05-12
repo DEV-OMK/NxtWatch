@@ -51,7 +51,7 @@ const HomeVideoCard = props => (
                       <BsDot />
                     </DotIcon>
                     <VideoText isDarkTheme={isDarkTheme}>
-                      {`${viewCount} views`}
+                      {viewCount} views
                     </VideoText>
                     <DotIcon isDarkTheme={isDarkTheme}>
                       <BsDot />
@@ -64,7 +64,7 @@ const HomeVideoCard = props => (
                     <VideoText isDarkTheme={isDarkTheme}>{name}</VideoText>
                     <DetailsCountAndDate>
                       <VideoText isDarkTheme={isDarkTheme}>
-                        {`${viewCount} views`}
+                        {viewCount} views
                       </VideoText>
                       <DotIcon isDarkTheme={isDarkTheme}>
                         <BsDot />

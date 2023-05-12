@@ -95,7 +95,7 @@ class VideoItemDetailsCard extends Component {
             <VideoDetails>
               <TimeAndViewsDetails>
                 <VideoText isDarkTheme={isDarkTheme}>
-                  {`${viewCount} views`}
+                  {viewCount} views
                 </VideoText>
                 <DotIcon isDarkTheme={isDarkTheme}>
                   <BsDot />
@@ -149,7 +149,7 @@ class VideoItemDetailsCard extends Component {
                 <div>
                   <ChannelName isDarkTheme={isDarkTheme}>{name}</ChannelName>
                   <VideoText isDarkTheme={isDarkTheme}>
-                    {`${subscriberCount} subscribers`}
+                    {subscriberCount} subscribers
                   </VideoText>
                 </div>
               </DetailsSm>
@@ -164,7 +164,7 @@ class VideoItemDetailsCard extends Component {
               <DetailsLg>
                 <ChannelName isDarkTheme={isDarkTheme}>{name}</ChannelName>
                 <VideoText isDarkTheme={isDarkTheme}>
-                  {`${subscriberCount} subscribers`}
+                  {subscriberCount} subscribers
                 </VideoText>
                 <DescriptionText marginTop="20px" isDarkTheme={isDarkTheme}>
                   {description}

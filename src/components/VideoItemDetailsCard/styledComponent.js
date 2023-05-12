@@ -156,7 +156,11 @@ export const Profile = styled.img`
   }
 `
 
-export const ChannelName = styled(VideoText)`
+export const ChannelName = styled.p`
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0px;
+  line-height: 2;
   font-size: 14px;
   color: ${props => (props.isDarkTheme ? '#f9f9f9' : '#231f20')};
 
@@ -165,7 +169,11 @@ export const ChannelName = styled(VideoText)`
   }
 `
 
-export const DescriptionText = styled(VideoText)`
+export const DescriptionText = styled.p`
+  font-family: 'Roboto';
+  font-weight: 500;
+  margin: 0px;
+  line-height: 2;
   font-size: 14px;
   margin-top: 20px;
   line-height: 1.5;
